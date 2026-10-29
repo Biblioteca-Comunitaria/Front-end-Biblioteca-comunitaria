@@ -129,9 +129,3 @@ Ao abrir pela primeira vez, a aplicação carrega:
 - Identificação de cada exemplar (número de tombamento).
 - Renovação de empréstimo e histórico por leitor.
 - Autenticação dos voluntários.
-
----
-
-## 📄 Licença
-
-Defina a licença do projeto (por exemplo, MIT) antes de publicar.
