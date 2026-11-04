@@ -2,7 +2,11 @@ import {useState} from "react";
 import {norm,fmt} from "../utils";
 
 export function Loans({db,q,tab,setTab,status,book,reader,open}){
+<<<<<<< HEAD
   const tabs=[["todos","Todos"],["Ativo","Ativos"],["Atrasado","Atrasados"],["Devolvido","Devolvidos"]];
+=======
+  const tabs=[["todos","Todos"],["Ativo","Ativos"],["Devolvido","Devolvidos"]];
+>>>>>>> e49b97a2d7195ceca21f6114934ccdecbfac2dbe
   const list=db.loans.filter(l=>{
     const b=book(l.bookId),r=reader(l.readerId),s=status(l);
     const texto=(b?b.title+" "+b.author:"")+" "+(r?r.name:"");
