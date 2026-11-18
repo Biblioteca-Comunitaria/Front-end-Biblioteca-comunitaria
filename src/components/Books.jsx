@@ -97,7 +97,7 @@ export function AddBook({onSave,onCancel}){
     <label>Editora<input className="f" value={f.publisher} onInput={set("publisher")}/></label>
     <label>Ano de publicação<input className="f" type="number" min="1000" max={new Date().getFullYear()+1} value={f.year} onInput={set("year")}/></label>
     <label>ISBN (único) *<input className="f" required value={f.isbn} onInput={set("isbn")}/></label>
-    <label>Exemplares disponíveis *<input className="f" type="number" min="1" required value={f.copies} onInput={set("copies")}/></label>
+    <label>Quantidade de exemplares *<input className="f" type="number" min="1" required value={f.copies} onInput={set("copies")}/></label>
     <div className="sm" style={{marginTop:6}}>A disponibilidade é calculada pelo servidor a partir dos empréstimos ativos.</div>
     <div className="row">
       <button className="btn" type="submit" disabled={saving}>{saving?"Cadastrando...":"Cadastrar novo livro"}</button>

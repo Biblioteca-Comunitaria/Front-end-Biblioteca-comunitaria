@@ -105,7 +105,7 @@ export default function App(){
     const year=f.year===""||f.year===null||f.year===undefined?null:Number(f.year);
     if(!title||!author||!isbn)return say("Preencha título, autor e ISBN.",1);
     if(year!==null&&(!Number.isInteger(year)||year<1000||year>new Date().getFullYear()+1))return say("Informe um ano de publicação válido.",1);
-    if(!Number.isInteger(copies)||copies<1)return say("Exemplares disponíveis deve ser ao menos 1.",1);
+    if(!Number.isInteger(copies)||copies<1)return say("A quantidade de exemplares deve ser ao menos 1.",1);
     if(db.books.some(b=>b.isbn.toLowerCase()===isbn.toLowerCase()))return say("Já existe um livro com esse ISBN.",1);
     try{
       await api.cadastrarLivro(f);
